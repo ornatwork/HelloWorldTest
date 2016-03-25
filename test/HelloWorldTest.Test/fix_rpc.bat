@@ -1,1 +1,0 @@
-copy %HOMEPATH%\.dnx\packages\grpc.native.csharp\0.13.0\build\native\bin\windows_x86\grpc_csharp_ext.dll  %HOMEPATH%\.dnx\packages\Grpc.Core\0.13.0\lib\net45\nativelibs\windows_x86\grpc_csharp_ext.dll

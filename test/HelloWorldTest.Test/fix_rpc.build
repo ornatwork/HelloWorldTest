@@ -13,6 +13,9 @@
   	<!-- copy to the correct location-->
     <echo message="" />
     <echo message="... Copying file" />
+    <echo message="... from ${user.dir}\.dnx\packages\grpc.native.csharp\0.13.0\build\native\bin\windows_x86\${move.file}" /> 
+    <echo message="... to ${user.dir}\.dnx\packages\Grpc.Core\0.13.0\lib\net45\nativelibs\windows_x86\${move.file}" /> 
+    
 		<copy file="${user.dir}\.dnx\packages\grpc.native.csharp\0.13.0\build\native\bin\windows_x86\${move.file}" 
           tofile="${user.dir}\.dnx\packages\Grpc.Core\0.13.0\lib\net45\nativelibs\windows_x86\${move.file}" />
 
