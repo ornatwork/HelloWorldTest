@@ -1,0 +1,10 @@
+*.vssscc
+*.xproj.user
+/**/*.pre-normalize
+*.suo
+/.vs
+/src/<%= project_name %>/bin
+/spec/<%= project_name %>.Spec/bin
+project.lock.json
+/misc/**/obj/Debug
+/misc/**/obj/Release

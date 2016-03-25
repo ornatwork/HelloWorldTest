@@ -1,0 +1,22 @@
+{
+  "name": "@solvas-fabric/solvas-fabric-sample-service-ping",
+  "version": "1.0.0-beta1.*",
+  "description": "Sample service GRPC",
+  "author": "Doug Lampe <rlampe@deloitte.com>",
+  "contributors": [
+    "Vassil Kovatchev <vkovatchev@deloitte.com>"
+  ],
+  "main": "src/solvas-fabric-sample-service-ping.js",
+  "repository": {
+    "type": "git",
+    "url": "http://solvasgit.sltc.com/node/solvas-fabric-sample-service-ping.git"
+  },
+  "bugs": {
+    "url": "http://solvasgit.sltc.com/node/solvas-fabric-sample-service-ping/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-jasmine": "~2.2.1"
+  },
+  "dependencies": {}
+}

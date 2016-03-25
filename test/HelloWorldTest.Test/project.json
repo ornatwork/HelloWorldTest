@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0-beta1-*",
+  "description": "HelloWorldTest Unit Tests",
+  "authors": [ "" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "xunit": "2.1.0",
+    "xunit.runner.dnx": "2.1.0-rc1-build204",
+    "System.Net.Http": "4.0.1-beta-23516",
+    "Microsoft.AspNet.TestHost": "1.0.0-rc1-final",
+    "HelloWorldTest.Shared": "1.0.0-*",
+    "HelloWorldTest": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  },
+
+  "compile": [
+    "../../SharedAssemblyInfo.cs"
+  ],
+
+  "resource": [
+    "test-files/**"
+  ],
+
+  "commands": {
+    "test": "xunit.runner.dnx"
+  }
+}

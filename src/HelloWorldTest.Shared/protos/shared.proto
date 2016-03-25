@@ -1,0 +1,24 @@
+﻿// The defenition of the server and the 
+// ball object that is hit between the players ( client and server )
+syntax = "proto3";
+package HelloWorldTest.Shared;
+
+// The greeting service definition.
+//------------------------------------------------------
+
+// Sends a Hello greeting, reverse string
+service PingServer {
+  rpc Hello(HelloRequest) returns(HelloReply) {}
+  rpc HelloRandom(HelloRequest) returns(HelloReply) {}
+}
+
+// The request message
+message HelloRequest {
+  string message = 1;
+}
+
+// The response message 
+message HelloReply {
+  string message = 1;
+}
+

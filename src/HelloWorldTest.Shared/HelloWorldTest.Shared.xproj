@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" DependsOnTargets="$(BuildDependsOn)" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <BuildDependsOn>
+      BuildProtos;
+      $(BuildDependsOn);
+    </BuildDependsOn>
+    <SchemaVersion>2.0</SchemaVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Target Name="BuildProtos" BeforeTargets="BeforeBuild">
+    <Message Text="Building gRPC protos..." Importance="high" />
+    <Exec Command="generate_grpc.bat" />
+  </Target>
+  <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.Props" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup Label="Globals">
+    <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\..\artifacts\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
+    <OutputPath Condition="'$(OutputPath)'=='' ">..\..\artifacts\bin\$(MSBuildProjectName)\</OutputPath>
+    <ProjectGuid>07ab7647-1d2a-45d9-9b11-87167c4e426b</ProjectGuid>
+    <RootNamespace>HelloWorldTest.Shared</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
+  <ItemGroup>
+    <DnxInvisibleContent Include=".bowerrc" />
+    <DnxInvisibleContent Include="bower.json" />
+    <DnxInvisibleContent Include="package.json" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
