@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+  Packages the Solvas Fabric Sample Template 
+-->
+<project name="fix" default="doit">
+  <!-- Variables -->
+	<property name="root.dir" value="${directory::get-current-directory()}" overwrite="false" />
+  <property name="user.dir" value="${environment::get-variable('USERPROFILE')}" />
+  <property name="move.file" value="grpc_csharp_ext.dll" />
+  
+
+  <target name="doit">
+  	<!-- copy to the correct location-->
+    <echo message="" />
+    <echo message="... Copying file" />
+		<copy file="${user.dir}\.dnx\packages\grpc.native.csharp\0.13.0\build\native\bin\windows_x86\${move.file}" 
+          tofile="${user.dir}\.dnx\packages\Grpc.Core\0.13.0\lib\net45\nativelibs\windows_x86\${move.file}" />
+
+  </target>
+
+</project>
