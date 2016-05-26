@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Google.Protobuf</id>
+    <version>3.0.0-beta3</version>
+    <title>Google Protocol Buffers C#</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <authors>Google Inc.</authors>
+    <owners>protobuf-packages</owners>
+    <licenseUrl>https://github.com/google/protobuf/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/google/protobuf</projectUrl>
+    <description>See project site for more info.</description>
+    <summary>C# runtime library for Protocol Buffers - Google's data interchange format.</summary>
+    <releaseNotes>C# proto3 support</releaseNotes>
+    <copyright>Copyright 2015, Google Inc.</copyright>
+    <tags>Protocol Buffers Binary Serialization Format Google proto proto3</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework="WindowsPhone8.0" />
+      <group targetFramework="Windows8.0" />
+      <group targetFramework="WindowsPhoneApp8.1" />
+      <group targetFramework="Unsupported0.0" />
+      <group targetFramework="MonoTouch0.0" />
+      <group targetFramework="MonoAndroid0.0" />
+      <group targetFramework=".NETPlatform5.0">
+        <dependency id="System.Collections" version="4.0.0" />
+        <dependency id="System.Diagnostics.Debug" version="4.0.0" />
+        <dependency id="System.Globalization" version="4.0.0" />
+        <dependency id="System.IO" version="4.0.0" />
+        <dependency id="System.Linq" version="4.0.0" />
+        <dependency id="System.Linq.Expressions" version="4.0.0" />
+        <dependency id="System.ObjectModel" version="4.0.0" />
+        <dependency id="System.Reflection" version="4.0.0" />
+        <dependency id="System.Reflection.Extensions" version="4.0.0" />
+        <dependency id="System.Runtime" version="4.0.0" />
+        <dependency id="System.Runtime.Extensions" version="4.0.0" />
+        <dependency id="System.Text.Encoding" version="4.0.0" />
+        <dependency id="System.Text.RegularExpressions" version="4.0.0" />
+        <dependency id="System.Threading" version="4.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
