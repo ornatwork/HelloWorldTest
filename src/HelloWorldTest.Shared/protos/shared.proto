@@ -1,9 +1,9 @@
-﻿// The defenition of the server and the 
-// ball object that is hit between the players ( client and server )
+﻿
+// The defenition of the server and the message objects
 syntax = "proto3";
 package HelloWorldTest.Shared;
 
-// The greeting service definition.
+// The service definition.
 //------------------------------------------------------
 
 // Sends a Hello greeting, reverse string
